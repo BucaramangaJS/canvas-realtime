@@ -1,0 +1,28 @@
+.Main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.Header{
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.Header__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header__logo figure{
+  margin: 0;
+}
+
+canvas{
+  margin-top: 60px;
+  width: 100%;
+  border: 1px solid #efefef;
+}

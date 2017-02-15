@@ -1,0 +1,28 @@
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
+    link(rel="stylesheet" href="/css/styles.css")
+    title Room #{title}
+
+  body
+    header.Header
+      .Header__container
+        .Header__logo
+          figure Canvas-realtime
+            img(src="")
+          .Header__counter 20
+        nav.Header__nav
+          ul
+            li
+              a(href="/rooms/green") Green Room
+            li
+              a(href="/rooms/red") Red Room
+    .Main
+      canvas(id="canvas" width="1000"  height="600")
+
+    block scripts
+      script(src="/socket.io/socket.io.js")
+      script(src="/js/lib.js")
