@@ -38,6 +38,10 @@ window.socketsLib = (function () {
     }
   }
 
+  function connectionsHandler (payload, element) {
+    element.innerText = payload
+  }
+
   return {
     isMobile,
     isDown,
@@ -45,6 +49,7 @@ window.socketsLib = (function () {
     roomColor,
     move,
     draw,
-    changeIsDown
+    changeIsDown,
+    connectionsHandler
   }
 })()
