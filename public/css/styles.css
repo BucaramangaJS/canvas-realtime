@@ -1,3 +1,12 @@
+body{
+  color: #7c7c7c;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .Main{
   width: 100vw;
   height: 100vh;
@@ -17,8 +26,41 @@
   align-items: center;
 }
 
-.Header__logo figure{
-  margin: 0;
+.Header__logo{
+  display: flex;
+  width: 240px;
+  justify-content: space-around;
+}
+
+.Header__counter{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40px;
+}
+
+.Header__nav{
+
+}
+
+.Header__nav ul{
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.Header__nav ul li{
+  list-style: none;
+}
+
+.Header__nav ul li:nth-child(1){
+  color: green;
+}
+
+.Header__nav ul li:nth-child(2){
+  color: red;
 }
 
 canvas{
