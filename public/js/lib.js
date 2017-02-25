@@ -4,7 +4,7 @@ window.socketsLib = (function () {
   let random = Math.random().toString(16).slice(2, 8)
   let roomColor = window.location.pathname.split('/')[2]
 
-  function move (e, context, socket, canvas) {
+  function move (e, canvas, context, socket) {
     if (isDown) {
       let cursorPosition = getCursorPosition(e, canvas)
 
